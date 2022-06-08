@@ -3,6 +3,7 @@ import Hero from './Components/Hero/Hero'
 import Navigation from './Components/Navigation/Navigation'
 import About from './Components/About/About'
 import Projects from './Components/Projects/Projects'
+import Footer from './Components/Footer/Footer'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
      <Hero />
      <About />
      <Projects />
+     <Footer />
     </section>
   )
 }

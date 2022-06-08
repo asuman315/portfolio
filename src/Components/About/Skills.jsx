@@ -10,7 +10,7 @@ const Skills = () => {
           return (
             <button
               key={index}
-              className='border-0 outline-none bg-primary-3 mr-4 my-2 px-3 py-2 uppercase tracking-wide font-bold rounded-md'>
+              className='border-0 outline-none bg-primary-3 mr-4 my-2 px-3 py-2 uppercase tracking-wide font-bold rounded-md  cursor-none'>
               {technology}
             </button>
           );

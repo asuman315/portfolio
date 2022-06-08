@@ -11,16 +11,19 @@ const ProjectOne = () => {
     'useContext',
   ];
   return (
-    <div className='mt-10 bg-primary-3 px-5 py-5 rounded-md shadow-md'>
-      <h3 className='font-bold text-center text-primary-2 pb-3 lg:cursor-pointer'>
-        <a
-          href='https://asuman315.github.io/get-bmi'
-          target='_blank'
-          rel='noreferrer'>
-          {' '}
-          BMI Application
-        </a>
-      </h3>
+    <div className='mt-10 bg-primary-3 px-5 pt-3 rounded-md shadow-md'>
+      <div className='relative mb-3'>
+        <h3 className='font-bold text-center text-primary-2 pb-3 lg:cursor-pointer'>
+          <a
+            href='https://asuman315.github.io/get-bmi'
+            target='_blank'
+            rel='noreferrer'>
+            {' '}
+            BMI Application
+          </a>
+        </h3>
+        <div className='bg-primary-2 h-[2px] absolute top-8 w-[16%] left-[42%]'></div>
+      </div>
       <img src={appImage} alt='gif' className='lg:h-[350px] w-full mb-3' />
       <div className='leading-8 tracking-wide'>
         <p className='mb-4'>
@@ -45,6 +48,11 @@ const ProjectOne = () => {
           rel='noreferrer'>
           <button className='uppercase border-none outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded bg-primary-2 w-full'>
             see live app
+          </button>
+        </a>
+        <a href='https://youtu.be/xX2YajoT4z8' target='_blank' rel='noreferrer'>
+          <button className='uppercase border-none outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded bg-primary-2 w-full'>
+            watch a short demo video
           </button>
         </a>
         <a

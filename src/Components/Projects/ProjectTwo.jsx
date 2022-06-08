@@ -6,6 +6,7 @@ const ProjectTwo = () => {
     'Tailwind CSS',
     'React',
     'NextJs',
+    'Redux',
     'NodeJs',
     'ExpressJs',
     'Strapi',
@@ -14,15 +15,18 @@ const ProjectTwo = () => {
     'Heroku',
   ];
   return (
-    <div className='mt-10 bg-primary-3 px-5 py-5 rounded-md shadow-md'>
-      <h3 className='font-bold text-center pb-3 text-primary-2 lg:cursor-pointer'>
-        <a
-          href='https://asmn-grocery-store.netlify.app/'
-          target='_blank'
-          rel='noreferrer'>
-          Shopping Experince of an Ecommerce Store
-        </a>
-      </h3>
+    <div className='mt-10 bg-primary-3 px-5 pt-3 rounded-md shadow-md'>
+      <div className='relative mb-3'>
+        <h3 className='font-bold text-center pb-3 text-primary-2 lg:cursor-pointer'>
+          <a
+            href='https://asmn-grocery-store.netlify.app/'
+            target='_blank'
+            rel='noreferrer'>
+            Shopping Experince of an Ecommerce Store
+          </a>
+        </h3>
+        <div className='bg-primary-2 h-[2px] absolute top-8 w-[30%] left-[35%]'></div>
+      </div>
       <img src={appImage} alt='gif' className='lg:h-[350px] mb-3' />
       <div className='leading-9'>
         <p>
@@ -60,6 +64,14 @@ const ProjectTwo = () => {
           rel='noreferrer'>
           <button className='uppercase border-none outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded bg-primary-2 w-full'>
             see live app
+          </button>
+        </a>
+        <a
+          href='https://www.youtube.com/watch?v=sSJwZI_phvc'
+          target='_blank'
+          rel='noreferrer'>
+          <button className='uppercase border-none outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded bg-primary-2 w-full'>
+            watch a short demo video
           </button>
         </a>
         <a
