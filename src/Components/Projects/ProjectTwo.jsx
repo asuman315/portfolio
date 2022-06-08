@@ -16,7 +16,10 @@ const ProjectTwo = () => {
   return (
     <div className='mt-10 bg-primary-3 px-5 py-5 rounded-md shadow-md'>
       <h3 className='font-bold text-center pb-3 text-primary-2 lg:cursor-pointer'>
-        <a href='https://asmn-grocery-store.netlify.app/' target='_blank'>
+        <a
+          href='https://asmn-grocery-store.netlify.app/'
+          target='_blank'
+          rel='noreferrer'>
           Shopping Experince of an Ecommerce Store
         </a>
       </h3>
@@ -27,9 +30,7 @@ const ProjectTwo = () => {
           product on the home page to checking out. The customer navigates five
           pages from the home page to the 'thankyou' page.
         </p>
-        <p className='my-4 font-bold'>
-          The customer is able to;
-        </p>
+        <p className='my-4 font-bold'>The customer is able to;</p>
         <p>
           - See hover states for all interactive elements on the page. <br />
           -Add/Remove products from the cart. <br />
@@ -48,16 +49,23 @@ const ProjectTwo = () => {
           summary. <br />
           - Retain their products in the cart after refreshing the page or after
           leaving the website. <br />
-          - Checkout using stripe. (The store is using a special card number from stripe for only testing purposes.) <br />
+          - Checkout using stripe. (The store is using a special card number
+          from stripe for only testing purposes.) <br />
         </p>
       </div>
       <div className='flex flex-col'>
-        <a href='https://asmn-grocery-store.netlify.app/' target='_blank'>
+        <a
+          href='https://asmn-grocery-store.netlify.app/'
+          target='_blank'
+          rel='noreferrer'>
           <button className='uppercase border-none outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded bg-primary-2 w-full'>
             see live app
           </button>
         </a>
-        <a href='https://github.com/asuman315/asuman-sounds' target='_blank'>
+        <a
+          href='https://github.com/asuman315/asuman-sounds'
+          target='_blank'
+          rel='noreferrer'>
           <button className='uppercase border-[1px] outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded w-full'>
             visit code repo
           </button>
