@@ -46,14 +46,14 @@ const ProjectOne = () => {
         </a>
       </div>
       <div>
-        <h3 className='text-center pt-5 pb-2 font-bold'>
+        <h3 className='text-center pt-5 pb-2 font-bold text-primary-2'>
           Technologies used in the project
         </h3>
         <div>
           {technologies.map((tech, index) => (
             <button
               key={index}
-              className='bg-white text-primary-3 text-sm font-bold mr-3 px-3 mb-3 rounded py-1'>
+              className='bg-primary-1 text-white text-sm font-bold mr-3 px-3 mb-3 rounded py-1'>
               {tech}
             </button>
           ))}
