@@ -1,7 +1,7 @@
 import React from 'react'
 import Contacts from './Contacts'
 import SocialMedia from './SocialMedia'
-import Form from './Form'
+//import Form from './Form'
 
 const Footer = () => {
   return (

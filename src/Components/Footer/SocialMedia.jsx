@@ -10,7 +10,7 @@ const SocialMedia = () => {
       <a
         href='https://www.linkedin.com/in/ssendegeya-asuman'
         target='_blank'
-        rel='noreferrer'>
+        rel='noreferrer' className='pg-primary-2 bottom-2'>
         <img src={linkedin} alt='Linkedin icon' className='w-8 rounded mr-2' />
       </a>
       <a
