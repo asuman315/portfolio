@@ -52,7 +52,7 @@ const ProjectOne = () => {
         </a>
         <a href='https://youtu.be/xX2YajoT4z8' target='_blank' rel='noreferrer'>
           <button className='uppercase border-none outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded bg-primary-2 w-full'>
-            watch a short demo video
+            short demo video
           </button>
         </a>
         <a
@@ -61,7 +61,7 @@ const ProjectOne = () => {
           rel='noreferrer'>
           {' '}
           <button className='uppercase border-[1px] outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded w-full'>
-            visit code repo
+            code repo
           </button>
         </a>
       </div>

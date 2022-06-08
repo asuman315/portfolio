@@ -25,7 +25,7 @@ const ProjectTwo = () => {
             Shopping Experince of an Ecommerce Store
           </a>
         </h3>
-        <div className='bg-primary-2 h-[2px] absolute top-8 w-[30%] left-[35%]'></div>
+        <div className='bg-primary-2 h-[2px] w-[30%] ml-[35%]'></div>
       </div>
       <img src={appImage} alt='gif' className='lg:h-[350px] mb-3' />
       <div className='leading-9'>
@@ -71,7 +71,7 @@ const ProjectTwo = () => {
           target='_blank'
           rel='noreferrer'>
           <button className='uppercase border-none outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded bg-primary-2 w-full'>
-            watch a short demo video
+            short demo video
           </button>
         </a>
         <a
@@ -79,7 +79,7 @@ const ProjectTwo = () => {
           target='_blank'
           rel='noreferrer'>
           <button className='uppercase border-[1px] outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded w-full'>
-            visit code repo
+            code repo
           </button>
         </a>
       </div>
