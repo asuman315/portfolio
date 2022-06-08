@@ -20,7 +20,7 @@ const MobileNav = () => {
   ];
   return (
     <div className=' md:hidden'>
-      <div className='absolute z-30 flex w-full justify-between px-4 py-5 bg-primary-3 items-center'>
+      <div className='absolute z-40 flex w-full justify-between px-4 py-5 bg-primary-3 items-center'>
         <h3 className='font-extrabold text-4xl tracking-widest font-["Dancing_Script"]'>
           A<span className='text-secondary-1'>S</span>
         </h3>
@@ -30,14 +30,14 @@ const MobileNav = () => {
         />
       </div>
       <ul
-        className={`fixed h-[80vh] right-0 top-20 p-4 z-10 duration-300 ease-in-out pt-10 bg-white ${
-          isMobileNavOpen ? 'left-[25%]' : 'left-[102%]'
+        className={`fixed flex flex-col items-center h-screen right-0 top-20 p-4 z-20 duration-300 ease-in-out pt-10 bg-primary-3 opacity-80 ${
+          isMobileNavOpen ? 'left-0' : 'left-[108%]'
         }`}>
        
        {  listItems.map((listItem, index) => {
         const { name } = listItem;
           return (
-            <li key={index} className='border-b-[1px] flex items-center text-xl mb-12 font-bold pb-2 text-primary-2'>
+            <li key={index} className='flex items-center text-xl mb-12 font-bold pb-2 text-white uppercase'>
               {name}
             </li>
           );

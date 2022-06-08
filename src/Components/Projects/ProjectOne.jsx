@@ -11,11 +11,14 @@ const ProjectOne = () => {
     'useContext',
   ];
   return (
-    <div className='mt-10 bg-primary-3 px-5 py-5 rounded-md shadow shadow-primary-2 max-w-xl'>
-      <img src={appImage} alt='gif' className='pb-6 h-[250px]' />
-      <h3 className='font-bold text-center pt-5 text-primary-2 border-t-2 pb-4'>
-        BMI Application
+    <div className='mt-10 bg-primary-3 px-5 py-5 rounded-md shadow-md'>
+      <h3 className='font-bold text-center text-primary-2 pb-3 lg:cursor-pointer'>
+        <a href='https://asuman315.github.io/get-bmi' target='_blank'>
+          {' '}
+          BMI Application
+        </a>
       </h3>
+      <img src={appImage} alt='gif' className='lg:h-[350px] w-full mb-3' />
       <div className='leading-8 tracking-wide'>
         <p className='mb-4'>
           This web application returns a BMI value based on the user's height
@@ -29,16 +32,18 @@ const ProjectOne = () => {
           All the user has to do is to enter their height and weight. <br />{' '}
           Inorder to provide a better user experince, the user can choose the
           units they are comfortable with - that is meters(m) or feet(ft) for
-          height. For weight - either pounds(Ibs) or kilograms(kgs).
+          height. For weight, its either pounds(Ibs) or kilograms(kgs).
         </p>
       </div>
       <div className='flex flex-col mt-6'>
-        <a href='https://asuman315.github.io/get-bmi'>
+        <a href='https://asuman315.github.io/get-bmi' target='_blank'>
           <button className='uppercase border-none outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded bg-primary-2 w-full'>
             see live app
           </button>
         </a>
-        <a href='https://github.com/asuman315/get-bmi/tree/master'>
+        <a
+          href='https://github.com/asuman315/get-bmi/tree/master'
+          target='_blank'>
           {' '}
           <button className='uppercase border-[1px] outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded w-full'>
             visit code repo
@@ -53,7 +58,7 @@ const ProjectOne = () => {
           {technologies.map((tech, index) => (
             <button
               key={index}
-              className='bg-primary-1 text-white text-sm font-bold mr-3 px-3 mb-3 rounded py-1'>
+              className='bg-primary-1 text-white text-sm font-bold mr-3 px-3 mb-3 rounded py-1 cursor-none'>
               {tech}
             </button>
           ))}

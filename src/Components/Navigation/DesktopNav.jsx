@@ -16,7 +16,7 @@ const DesktopNav = () => {
      },
    ];
   return (
-    <div className='hidden md:flex justify-between px-8 py-7 items-center bg-primary-3'>
+    <div className='hidden md:flex justify-between px-8 py-3 items-center bg-primary-3'>
       <h3 className='font-extrabold text-6xl tracking-widest font-["Dancing_Script"] text-left'>
         A<span className='text-secondary-1'>S</span>
       </h3>

@@ -1,6 +1,6 @@
-import React from 'react'
-import ProjectOne from './ProjectOne'
-import ProjectTwo from './ProjectTwo'
+import React from 'react';
+import ProjectOne from './ProjectOne';
+import ProjectTwo from './ProjectTwo';
 
 const Projects = () => {
   return (
@@ -8,10 +8,12 @@ const Projects = () => {
       <h2 className='text-center font-bold text-3xl text-primary-2'>
         Projects
       </h2>
-      <ProjectOne />
-      <ProjectTwo />
+      <div className='md:grid md:grid-cols-autofill-lg gap-8 max-w-6xl mx-auto mb-12'>
+        <ProjectTwo />
+        <ProjectOne />
+      </div>
     </div>
   );
-}
+};
 
-export default Projects
+export default Projects;
