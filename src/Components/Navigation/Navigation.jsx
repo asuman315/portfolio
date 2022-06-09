@@ -4,7 +4,7 @@ import DesktopNav from './DesktopNav'
 
 const Navigation = () => {
   return (
-    <nav  className='static z-30 w-screen'>
+    <nav  className='fixed z-30 w-screen'>
       <MobileNav />
       <DesktopNav />
     </nav>

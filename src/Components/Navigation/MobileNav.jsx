@@ -1,21 +1,26 @@
 import React from 'react';
 import { useState } from 'react';
+import { Link, animateScroll as scroll, } from 'react-scroll';
 
 const MobileNav = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-
+ console.log('is Mobile nav open? ', isMobileNavOpen);
   const listItems = [
     {
       name: 'Home',
+      offset: 0,
     },
     {
-      name: 'About'
+      name: 'About',
+      offset: -80,
     },
     {
       name: 'Projects',
+      offset: -80,
     },
     {
       name: 'Contact',
+      offset: -150,
     },
   ];
   return (
@@ -35,10 +40,20 @@ const MobileNav = () => {
         }`}>
        
        {  listItems.map((listItem, index) => {
-        const { name } = listItem;
+        const { name, offset } = listItem;
           return (
-            <li key={index} className='flex items-center text-xl mb-12 font-bold pb-2 text-white uppercase'>
-              {name}
+            <li
+              key={index}
+              className='flex items-center text-xl mb-12 font-bold pb-2 text-white uppercase'>
+              {' '}
+              <Link
+                to={name}
+                smooth={true}
+                offset={offset}
+                duration={500}
+                onClick={() => setIsMobileNavOpen(!isMobileNavOpen)}>
+                {name}
+              </Link>
             </li>
           );
        } ) }

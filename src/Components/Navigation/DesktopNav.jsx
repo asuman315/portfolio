@@ -1,18 +1,23 @@
 import React from 'react'
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const DesktopNav = () => {
    const listItems = [
      {
        name: 'Home',
+       offset: 0,
      },
      {
        name: 'About',
+        offset: -80,
      },
      {
        name: 'Projects',
+        offset: -80,
      },
      {
        name: 'Contact',
+        offset: -80,
      },
    ];
   return (
@@ -22,12 +27,19 @@ const DesktopNav = () => {
       </h3>
       <ul className='flex w-[60%] justify-between font-bold text-xl uppercase tracking-wide pr-8'>
         {listItems.map((listItem, index) => {
-          const { name } = listItem;
+          const { name, offset } = listItem;
           return (
             <li
               key={index}
               className='lg:cursor-pointer lg:hover:text-primary-2 lg:hover:translate-x-1 duration-300 ease-in-out'>
-              {name}
+              {' '}
+              <Link
+                to={name}
+                smooth={true}
+                offset={offset}
+                duration={500}>
+                {name}
+              </Link>
             </li>
           );
         })}

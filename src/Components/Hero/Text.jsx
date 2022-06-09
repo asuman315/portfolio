@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link, animateScroll as scroll } from 'react-scroll';
 
 const Text = () => {
   return (
@@ -16,7 +17,9 @@ const Text = () => {
       </div>
       <div>
         <button className='bg-primary- mt-8 py-3 px-12 uppercase tracking-wide font-medium border-[1px] border-primary-2 text-primary-2'>
-          my projects
+          <Link to='Projects' smooth={true} offset={-80} duration={500}>
+            my projects
+          </Link>
         </button>
       </div>
     </div>

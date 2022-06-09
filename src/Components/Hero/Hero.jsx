@@ -4,7 +4,7 @@ import Text from './Text'
 
 const Hero = () => {
   return (
-    <section>
+    <section name='Home'>
       <Image />
       <Text />
     </section>
