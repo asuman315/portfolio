@@ -14,12 +14,10 @@ const Form = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e) => {
-    
-    const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/;
 
     e.preventDefault();
 
-     if (!reg.test(email)) {
+     if (!/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/.test(email)) {
       setAlert({
         type: 'error',
         message: 'Please enter a valid email address',
