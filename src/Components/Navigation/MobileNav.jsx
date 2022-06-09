@@ -1,6 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
-import { Link, animateScroll as scroll, } from 'react-scroll';
+import { Link } from 'react-scroll';
 
 const MobileNav = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
