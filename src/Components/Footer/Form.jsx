@@ -14,7 +14,20 @@ const Form = () => {
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e) => {
+    
+    const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/;
+
     e.preventDefault();
+
+     if (!reg.test(email)) {
+      setAlert({
+        type: 'error',
+        message: 'Please enter a valid email address',
+        show: true,
+      });
+      return;
+     }
+
     try {
       setIsLoading(true);
       await emailjs.send(
@@ -43,7 +56,6 @@ const Form = () => {
     }
   };
 
-  console.log(alert.type, alert);
   return (
     <div>
       <form
