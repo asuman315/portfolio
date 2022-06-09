@@ -13,6 +13,7 @@ module.exports = {
       'primary-1': 'hsl(197.4, 80%, 15%)',
       'primary-2': 'hsl(197.4, 90%, 55%)',
       'primary-3': 'hsl(197.4, 30%, 25%)',
+      'primary-4': 'hsl(197.4, 30%, 35%)',
       'secondary-1': 'hsl(38.8, 100%, 55%)',
       'white': '#fff',
     },
