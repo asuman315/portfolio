@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contacts = () => {
   return (
-    <div className='bg-primary-1 py-5 px-5 w-autofill w-[fit-content] rounded-sm mx-auto mt-6 h-[fit-content]'>
+    <div className='bg-primary-1 p-4 w-autofill w-[fit-content] rounded-sm mx-auto mt-6 h-[fit-content]'>
       <div>
         <p>Phone</p>
         <p>+256 785598694</p>

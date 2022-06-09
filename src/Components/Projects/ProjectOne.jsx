@@ -27,8 +27,8 @@ const ProjectOne = () => {
       <img src={appImage} alt='gif' className='lg:h-[350px] w-full mb-3' />
       <div className='leading-8 tracking-wide'>
         <p className='mb-4'>
-          This web application returns a BMI value based on the user's height
-          and weight; <br />
+          Based on the user's height
+          and weight, this application will return; <br />
           - BMI (Body Mass Index) <br />
           - BMI category (e.g Underweight, Normal, Overweight, Obese) <br />-
           And Ideal Weight. This depends on the user's height. The ideal weight
