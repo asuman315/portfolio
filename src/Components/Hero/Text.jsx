@@ -1,7 +1,8 @@
-import React from 'react'
-import { Link} from 'react-scroll';
+import React from 'react';
+import { Link } from 'react-scroll';
 
 const Text = () => {
+  const resume = require('../../Assets/Software-dev-resume.pdf');
   return (
     <div className='relative z-10 text[red] w-screen h-screen flex flex-col items-center justify-center'>
       <div>
@@ -15,15 +16,20 @@ const Text = () => {
           I am a <span className='text-secondary-1'>Software Developer</span>
         </h1>
       </div>
-      <div>
-        <button className='bg-primary- mt-8 py-3 px-12 uppercase tracking-wide font-medium border-[1px] border-primary-2 text-primary-2'>
-          <Link to='Projects' smooth={true} offset={-80} duration={500}>
+      <div className='flex flex-col'>
+        <Link to='Projects' smooth={true} offset={-80} duration={500}>
+          <button className='bg-primary- mt-28 py-3 px-12 uppercase tracking-wide border-[1px] border-none bg-primary-2 text-primary-1 font-bold w-full'>
             my projects
-          </Link>
-        </button>
+          </button>
+        </Link>
+        <a href={resume} download>
+          <button className='bg-primary- mt-8 py-3 px-12 uppercase tracking-wide font-bold border-[1px] border-primary-2 text-primary-2'>
+            Download Resume
+          </button>
+        </a>
       </div>
     </div>
   );
-}
+};
 
-export default Text
+export default Text;
