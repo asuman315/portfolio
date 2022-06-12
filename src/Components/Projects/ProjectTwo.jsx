@@ -47,8 +47,8 @@ const ProjectTwo = () => {
           products in the cart. <br />- VAT is calculated as 3% of the product
           total, excluding shipping. <br />
           - Shipping always adds a certain amount to the order depending on the
-          shippng method selected. <br />- Subscribe to the email list after
-          checking 'send me special offers' option. <br />
+          shippng method selected. <br />- Subscribe to the email list. <br />
+          - Authenticate before completing the checkout process. <br />
           - See an Order confirmation modal after checking out with an order
           summary. <br />
           - Retain their products in the cart after refreshing the page or after
@@ -66,10 +66,7 @@ const ProjectTwo = () => {
             see live app
           </button>
         </a>
-        <a
-          href='https://www.youtube.com/watch?v=sSJwZI_phvc'
-          target='_blank'
-          rel='noreferrer'>
+        <a href='https://youtu.be/WAZE1xZCWTE' target='_blank' rel='noreferrer'>
           <button className='uppercase border-none outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded bg-primary-2 w-full'>
             short demo video
           </button>
