@@ -66,7 +66,10 @@ const ProjectTwo = () => {
             see live app
           </button>
         </a>
-        <a href='https://youtu.be/WAZE1xZCWTE' target='_blank' rel='noreferrer'>
+        <a
+          href='https://res.cloudinary.com/dbsbevgcj/video/upload/v1655058549/asuman_sounds_8_a9bb7fb9ba.mp4?updated_at=2022-06-12T18:29:11.293Z'
+          target='_blank'
+          rel='noreferrer'>
           <button className='uppercase border-none outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded bg-primary-2 w-full'>
             short demo video
           </button>
