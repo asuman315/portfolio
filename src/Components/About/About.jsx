@@ -3,8 +3,6 @@ import Intro from './Intro';
 import Skills from './Skills';
 import Zoom from 'react-reveal/Zoom';
 
-// eslint-disable-next-line @typescript-eslint/ban-ts-comment
-// @ts-ignore
 import Slide from 'react-reveal/Slide';
 
 const About = () => {
