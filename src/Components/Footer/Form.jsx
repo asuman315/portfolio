@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import emailjs from 'emailjs-com';
 import ClipLoader from 'react-spinners/ClipLoader';
+import Zoom from 'react-reveal/Zoom';
 
 const Form = () => {
   const [name, setName] = useState('');
@@ -15,7 +16,8 @@ const Form = () => {
 
   const handleSubmit = async (e) => {
     //eslint-disable-next-line
-    const reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/;
+    const reg =
+      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{3,}))$/;
 
     e.preventDefault();
 
@@ -58,46 +60,48 @@ const Form = () => {
 
   return (
     <div>
-      <form
-        onSubmit={handleSubmit}
-        className=' px-4 py-6 flex flex-col justify-center bg-primary-1 text-white font-medium w-[80%] mx-auto mt-8 rounded md:w-full relative'>
-        {alert.show && <Alert setAlert={setAlert} alert={alert} />}
-        <input
-          type='text'
-          placeholder='Name'
-          className='rounded-sm mb-4 py-2 px-2 bg-primary-4'
-          autoComplete='on'
-          value={name}
-          onChange={(e) => setName(e.target.value)}
-          required
-        />
-        <input
-          type='text'
-          placeholder='Email'
-          className='rounded-sm mb-4 py-2 px-2 bg-primary-4'
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
-          required
-        />
-        <textarea
-          placeholder='Type your message here'
-          className=' px-2 py-2 rounded-sm bg-primary-4'
-          rows='5'
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          required
-        />
-        <div className='relative flex items-center mt-4'>
-          <div className='absolute flex items-center left-6 sm:left-12 md:left-16 lg:left-24'>
-            {isLoading && <ClipLoader size={25} color={'#0c4a6e'} />}
+      <Zoom right>
+        <form
+          onSubmit={handleSubmit}
+          className=' px-4 py-6 flex flex-col justify-center bg-primary-1 text-white font-medium w-[80%] mx-auto mt-8 rounded md:w-full relative'>
+          {alert.show && <Alert setAlert={setAlert} alert={alert} />}
+          <input
+            type='text'
+            placeholder='Name'
+            className='rounded-sm mb-4 py-2 px-2 bg-primary-4'
+            autoComplete='on'
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+            required
+          />
+          <input
+            type='text'
+            placeholder='Email'
+            className='rounded-sm mb-4 py-2 px-2 bg-primary-4'
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
+          <textarea
+            placeholder='Type your message here'
+            className=' px-2 py-2 rounded-sm bg-primary-4'
+            rows='5'
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
+            required
+          />
+          <div className='relative flex items-center mt-4'>
+            <div className='absolute flex items-center left-6 sm:left-12 md:left-16 lg:left-24'>
+              {isLoading && <ClipLoader size={25} color={'#0c4a6e'} />}
+            </div>
+            <button
+              type='submit'
+              className='text-center bg-primary-2 w-full py-2 rounded-sm font-bold text-primary-1'>
+              {isLoading ? 'Sending message...' : 'Send Message'}
+            </button>
           </div>
-          <button
-            type='submit'
-            className='text-center bg-primary-2 w-full py-2 rounded-sm font-bold text-primary-1'>
-            { isLoading ? 'Sending message...' : 'Send Message' }
-          </button>
-        </div>
-      </form>
+        </form>
+      </Zoom>
     </div>
   );
 };
