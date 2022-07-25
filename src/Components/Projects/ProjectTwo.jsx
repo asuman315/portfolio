@@ -15,6 +15,7 @@ const ProjectTwo = () => {
     'ExpressJs',
     'Strapi',
     'Stripe API',
+    'REST API',
     'MongoDb',
     'Heroku',
   ];

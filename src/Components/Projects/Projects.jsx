@@ -1,6 +1,7 @@
 import React from 'react';
 import ProjectOne from './ProjectOne';
 import ProjectTwo from './ProjectTwo';
+import ProjectThree from './ProjectThree';
 import Roll from 'react-reveal/Roll';
 
 const Projects = () => {
@@ -13,6 +14,7 @@ const Projects = () => {
       </Roll>
       <div className='md:grid md:grid-cols-autofill-lg gap-8 max-w-6xl mx-auto mb-12'>
         <ProjectTwo />
+        <ProjectThree />
         <ProjectOne />
       </div>
     </div>
