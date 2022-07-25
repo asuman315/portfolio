@@ -36,10 +36,35 @@ const ProjectOne = () => {
       <div className='leading-8 tracking-wide'>
         <Slide bottom>
           <p className='mb-4'>
-            The user can select from a variety of meals and drinks that belong
-            to a variety of categories. <br />
-            Then the user can add the selected meal to the cart. <br />
-            The user can edit the quantity of the selected meal within the cart. <br />
+            This is a web application I built in collaboration with another
+            developer -{' '}
+            <span className='underline text-bold text-primary-2'>
+              <a
+                href='https://www.linkedin.com/in/d-saglam/'
+                target='_blank'
+                rel='noreferrer'>
+                Dogan Saglam
+              </a>{' '}
+            </span>
+            - who is currently working as a front-end engineer at{' '}
+            <span className='underline text-bold text-primary-2'>
+              <a
+                href='https://www.linkedin.com/company/artlabs-ai/'
+                target='_blank'
+                rel='noreferrer'>
+                artlabs.ai.
+              </a>{' '}
+            </span>{' '}
+            <br />
+            <p className='py-3'>
+              This application allows a user to order food from a modern cafe. <br />
+              The user can choose from a variety of meals and drinks that belong
+              to a variety of categories. <br />
+              Then the user can add the selected drink/meal to the cart. <br />
+              A user can edit the quantity of the selected meal within the
+              cart.{' '}
+            </p>
+            <br />
           </p>
         </Slide>
         {/* <Slide bottom>
