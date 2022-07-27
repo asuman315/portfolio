@@ -20,7 +20,7 @@ const ProjectOne = () => {
         <Slide right>
           <h3 className='font-bold capitalize tracking-wider text-center text-primary-2 pb-3 lg:cursor-pointer'>
             <a
-              href='https://cafeteriase.netlify.app/'
+              href='https://cafeteriase.com/'
               target='_blank'
               rel='noreferrer'>
               {' '}
@@ -79,7 +79,7 @@ const ProjectOne = () => {
       <div className='flex flex-col mt-6'>
         <Rotate top right>
           <a
-            href='https://cafeteriase.netlify.app/'
+            href='https://cafeteriase.com/'
             target='_blank'
             rel='noreferrer'>
             <button className='uppercase border-none outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded bg-primary-2 w-full'>

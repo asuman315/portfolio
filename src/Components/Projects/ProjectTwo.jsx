@@ -25,7 +25,7 @@ const ProjectTwo = () => {
         <Slide left>
           <h3 className='font-bold text-center pb-3 text-primary-2 lg:cursor-pointer'>
             <a
-              href='https://asmn-grocery-store.netlify.app/'
+              href='https://asumansounds.com/'
               target='_blank'
               rel='noreferrer'>
               Shopping Experince of an Ecommerce Store
@@ -76,7 +76,7 @@ const ProjectTwo = () => {
       <div className='flex flex-col'>
         <Rotate top left>
           <a
-            href='https://asmn-grocery-store.netlify.app/'
+            href='https://asumansounds.com/'
             target='_blank'
             rel='noreferrer'>
             <button className='uppercase border-none outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded bg-primary-2 w-full'>
