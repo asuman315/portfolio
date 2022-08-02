@@ -12,7 +12,7 @@ const Projects = () => {
           Projects
         </h2>
       </Roll>
-      <div className='md:grid md:grid-cols-autofill-lg gap-8 max-w-6xl mx-auto mb-12'>
+      <div className='md:grid md:grid-cols-2 gap-8 max-w-6xl mx-auto mb-12'>
         <ProjectTwo />
         <ProjectThree />
         <ProjectOne />
