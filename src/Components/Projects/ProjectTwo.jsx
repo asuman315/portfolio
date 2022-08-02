@@ -5,7 +5,7 @@ import Roll from 'react-reveal/Roll';
 import Rotate from 'react-reveal/Rotate';
 
 const ProjectTwo = () => {
-  const appImage = require('../../Assets/asuman-sounds.gif');
+  const appImage = require('../../public/asuman-sounds-gif.gif');
   const technologies = [
     'Tailwind CSS',
     'React',
@@ -75,10 +75,7 @@ const ProjectTwo = () => {
       </div>
       <div className='flex flex-col'>
         <Rotate top left>
-          <a
-            href='https://asumansounds.com/'
-            target='_blank'
-            rel='noreferrer'>
+          <a href='https://asumansounds.com/' target='_blank' rel='noreferrer'>
             <button className='uppercase border-none outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded bg-primary-2 w-full'>
               see live app
             </button>
@@ -86,7 +83,7 @@ const ProjectTwo = () => {
         </Rotate>
         <Slide right>
           <a
-            href='https://res.cloudinary.com/dbsbevgcj/video/upload/v1655058549/asuman_sounds_8_a9bb7fb9ba.mp4?updated_at=2022-06-12T18:29:11.293Z'
+            href='https://res.cloudinary.com/dbsbevgcj/video/upload/v1659456753/asuman_sounds_new_8e98b06578.mp4?updated_at=2022-08-02T16:12:40.087Z'
             target='_blank'
             rel='noreferrer'>
             <button className='uppercase border-none outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded bg-primary-2 w-full'>
