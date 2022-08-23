@@ -30,16 +30,7 @@ const ProjectOne = () => {
         <div className='bg-primary-2 h-[2px] absolute top-8 w-[16%] left-[42%]'></div>
       </div>
       <Zoom bottom>
-        {/* <img src={appImage} alt='gif' className='lg:h-[350px] w-full mb-3' /> */}
-        <iframe
-          className='container mx-auto w-[560px]'
-          width='560'
-          height='315'
-          src='https://youtu.be/xX2YajoT4z8'
-          title='YouTube video player'
-          frameBorder=''
-          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
-          allowFullScreen></iframe>
+        <img src={appImage} alt='gif' className='lg:h-[350px] w-full mb-3' />
       </Zoom>
       <div className='leading-8 tracking-wide'>
         <Slide bottom>
