@@ -30,7 +30,16 @@ const ProjectOne = () => {
         <div className='bg-primary-2 h-[2px] absolute top-8 w-[16%] left-[42%]'></div>
       </div>
       <Zoom bottom>
-        <img src={appImage} alt='gif' className='lg:h-[350px] w-full mb-3' />
+        {/* <img src={appImage} alt='gif' className='lg:h-[350px] w-full mb-3' /> */}
+        <iframe
+          className='container mx-auto w-[560px]'
+          width='560'
+          height='315'
+          src='https://youtu.be/xX2YajoT4z8'
+          title='YouTube video player'
+          frameBorder=''
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowFullScreen></iframe>
       </Zoom>
       <div className='leading-8 tracking-wide'>
         <Slide bottom>
@@ -87,20 +96,20 @@ const ProjectOne = () => {
         </Rotate>
       </div>
       <Zoom left>
-      <div>
-        <h3 className='text-center pt-5 pb-2 font-bold text-primary-2'>
-          Technologies used in the project
-        </h3>
         <div>
-          {technologies.map((tech, index) => (
-            <button
-              key={index}
-              className='bg-primary-1 text-white text-sm font-bold mr-3 px-3 mb-3 rounded py-1 cursor-none'>
-              {tech}
-            </button>
-          ))}
+          <h3 className='text-center pt-5 pb-2 font-bold text-primary-2'>
+            Technologies used in the project
+          </h3>
+          <div>
+            {technologies.map((tech, index) => (
+              <button
+                key={index}
+                className='bg-primary-1 text-white text-sm font-bold mr-3 px-3 mb-3 rounded py-1 cursor-none'>
+                {tech}
+              </button>
+            ))}
+          </div>
         </div>
-      </div>
       </Zoom>
     </div>
   );

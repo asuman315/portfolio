@@ -35,7 +35,16 @@ const ProjectTwo = () => {
         <div className='bg-primary-2 h-[2px] w-[30%] ml-[35%]'></div>
       </div>
       <Zoom top>
-        <img src={appImage} alt='gif' className='lg:h-[350px] mb-3' />
+        {/* <img src={appImage} alt='gif' className='lg:h-[350px] mb-3' /> */}
+        <iframe
+          className='container mx-auto w-[560px]'
+          width='560'
+          height='315'
+          src='https://res.cloudinary.com/dbsbevgcj/video/upload/v1659456753/asuman_sounds_new_8e98b06578.mp4?updated_at=2022-08-02T16:12:40.087Z'
+          title='YouTube video player'
+          frameBorder=''
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowFullScreen></iframe>
       </Zoom>
       <div className='leading-9'>
         <Slide left>
