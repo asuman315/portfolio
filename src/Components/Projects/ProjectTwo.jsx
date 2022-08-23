@@ -5,7 +5,7 @@ import Roll from 'react-reveal/Roll';
 import Rotate from 'react-reveal/Rotate';
 
 const ProjectTwo = () => {
-  const appImage = require('../../Assets/asuman-sounds-gif.gif');
+ // const appImage = require('../../Assets/asuman-sounds-gif.gif');
   const technologies = [
     'Tailwind CSS',
     'React',
