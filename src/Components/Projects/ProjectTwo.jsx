@@ -37,9 +37,18 @@ const ProjectTwo = () => {
       <Zoom top>
         {/* <img src={appImage} alt='gif' className='lg:h-[350px] mb-3' /> */}
         <iframe
-          className='container mx-auto w-[560px]'
+          className='container mx-auto w-ful sm:hidden'
+          width='auto'
+          height='auto'
+          src='https://res.cloudinary.com/dbsbevgcj/video/upload/v1661268881/asuman_sounds_9_bfc31aa66b.mp4?updated_at=2022-08-23T15:34:42.541Z'
+          title='YouTube video player'
+          frameBorder=''
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowFullScreen></iframe>
+        <iframe
+          className='container mx-auto w-[560px] hidden sm:block'
           width='560'
-          height='325'
+          height='315'
           src='https://res.cloudinary.com/dbsbevgcj/video/upload/v1661268881/asuman_sounds_9_bfc31aa66b.mp4?updated_at=2022-08-23T15:34:42.541Z'
           title='YouTube video player'
           frameBorder=''
