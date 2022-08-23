@@ -92,7 +92,7 @@ const ProjectTwo = () => {
         </Rotate>
         <Slide right>
           <a
-            href='https://res.cloudinary.com/dbsbevgcj/video/upload/v1659456753/asuman_sounds_new_8e98b06578.mp4?updated_at=2022-08-02T16:12:40.087Z'
+            href='https://res.cloudinary.com/dbsbevgcj/video/upload/v1661268881/asuman_sounds_9_bfc31aa66b.mp4?updated_at=2022-08-23T15:34:42.541Z'
             target='_blank'
             rel='noreferrer'>
             <button className='uppercase border-none outline-none py-3 mt-3 tracking-widest font-bold text-lg rounded bg-primary-2 w-full'>
