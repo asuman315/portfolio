@@ -29,7 +29,7 @@ const Text = () => {
         </Link>
         </Rotate>
         <Rotate bottom right>
-        <a href={resume} download>
+        <a href={resume} download='asuman-dev-resume'>
           <button className='bg-primary- mt-8 py-3 px-12 uppercase tracking-wide font-bold border-[1px] border-primary-2 text-primary-2'>
             Download Resume
           </button>
